@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+/* <!-- -------------Navbar------------- --> */
+
+
+.header {
+  min-height: 100vh;
+  width: 100wh;
+  background-image: linear-gradient(
+      rgba(4, 9, 30, 0.945),
+      rgba(2, 5, 17, 0.863)
+    ),
+    url(banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 3%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 171px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  background: rgb(66, 145, 236);
+  transition: 0.29s;
+}
+
+.nav-links ul li:hover::after {
+  width: 75%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  padding-bottom: 30px;
+  font-size: 100px;
+  font-weight: 900;
+  color: #c5c5c5;
+}
+.text-box p {
+  padding-bottom: 35px;
+  font-size: 30px;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 12px 34px;
+  background: transparent;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  font-family: "Poppins";
+}
+.hero-btn:hover {
+  border: 1px solid rgb(40, 60, 177);
+  background:linear-gradient( to right, rgb(40, 60, 177),rgb(99, 71, 150));
+  color: rgb(255, 255, 255);
+  transition: .3s;
+}
+
+/* <!-- -------------Problem and Solutions Section------------- --> */
+
+
+.wrapper{
+  background-color: #161616;
+}
+
+.problem-solution{
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  min-height: fit-content;
+  color: #fff;
+
+}
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  margin-bottom:100px ;
+  justify-content: center;
+}
+
+.prob-col h2{
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  padding-left: 2.5rem;
+
+}
+.prob-col p{
+  margin-bottom: 0.625rem;
+  font-size: 1.438rem;
+  text-align: start;
+  padding-left: 3.125rem;
+}
+
+.prob-col .para-heading{
+  font-size: 1.7rem ;
+  font-family: "Poppins";
+}
+.prob-col .para-content{
+  margin: 1rem;
+}
+.sol-col h2{
+  font-size: 2rem;
+  margin-bottom: 30px;
+  padding-left: 40px;
+
+}
+.sol-col p{
+  margin-bottom: 1rem;
+  font-size: 1.438rem;
+  text-align: start;
+  padding-left: 3.125rem;
+}
+
+.sol-col mark {
+  background-color: #353535;
+  color: #fff;
+}

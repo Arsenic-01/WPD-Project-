@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <!-- -------------Navbar------------- -->
+
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo"><img src="logo1.png"></a>
+            <div class="nav-links"  id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="notes.html">NOTES</a></li>
+                  <li><a href="blog.html">BLOG</a></li>
+                  <li><a href="aboutus.html">ABOUT US</a></li>
+                </ul>
+              </div>
+              <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            </div>
+        </nav>
+        <div class="text-box">
+          <h1>Project Moto</h1>
+          <p>
+            Provide Quality Notes & Resources in One Place.            
+          </p>
+          <a href="notes.html" class="hero-btn">Go to Notes</a>
+        </div>
+    </section>
+
+
+    <!-- -------------Problem and Solutions Section------------- -->
+
+
+    <section class="wrapper">
+    <section class="problem-solution">
+      <div class="hero-content">
+          <div class="prob-col">
+            <h2><b>Problems</b> faced by Diploma Students</h2>
+
+            <p class="para-heading">
+              1. Limited Knowledge Expansion:
+            </p>
+
+            <p class="para-content">Without access to reference books and proper guidance,
+              students may struggle to deepen their understanding of complex computer technology concepts.
+              This can limit their ability to explore advanced topics and stay updated with the latest trends.
+              This may also weaken them and they may not compete with others properly.
+            </p>
+
+
+            <p class="para-heading">
+              2. Incomplete Understanding: 
+            </p>
+            
+            <p class="para-content">Lack of reference materials can lead to an incomplete understanding of certain subjects.
+              This can hinder the students' ability to grasp foundational concepts, potentially leading to gaps in their knowledge.
+            </p>
+
+
+            <p class="para-heading">
+              3. Hindered Skill Development:
+            </p>
+
+            <p class="para-content">For students aiming to develop practical skills in coding, software development, or hardware design, the absence of reference books and guidance can impede their progress.
+              This might slow down their ability to apply theoretical knowledge to real-world projects.
+            </p>
+
+
+            <p class="para-heading">
+              4. Lack of Guidance: 
+            </p>
+            
+            <p class="para-content">
+              Guidance is the most important thing which students requires (i.e.things to remember before paper).
+            </p>
+
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="sol-col">
+            <h2><b>Solutions</b> We Offer</h2>
+
+            <p>
+              1. <mark>Reference books</mark> are available for all subjects taught in the computer technology branch. 
+            </p>
+
+            <p>
+              2. <mark>Chapter-Wise Notes</mark> are Made Available for each Semester.
+            </p>
+
+            <p>
+              3. The <mark>MSBTE syllabus</mark> and <mark>most recent news</mark> are posted here to keep interested students informed of any updates.
+            </p>
+
+            <p>
+              4. The most recent <mark>skills needed</mark> to land a great job are posted here along with video lessons.
+            </p>
+
+            <p>
+              5. <mark>Chapter-Wise YouTube Videos</mark> are available here to dispel any questions.
+            </p>
+
+          </div>
+        </div>
+    </section>
+  </section>
+
+
+
+
+      <!-- -------------Javascript for Toggle Menu------------- -->
+
+     <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-150px";
+      } 
+    </script>
+</body>
+</html>
