@@ -282,16 +282,12 @@ nav img {
     font-size: .9rem;
     font-family: "Poppins";
   }
-  /* .prob-col .para-content {
-    margin: 1rem;
-  } */
+
   .sol-col h2 {
     font-size: 1rem;
-    /* margin-bottom: 30px; */
     padding-left: 40px;
   }
   .sol-col p {
-    /* margin-bottom: 1rem; */
     font-size: .8rem;
     text-align: start;
     padding-left: 3.125rem;

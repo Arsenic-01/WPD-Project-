@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
 </head>
@@ -123,7 +126,40 @@
 
   </section>
 
-      <!-- -------------Uploads Section------------- -->
+      <!-- -------------ContactUs & Uploads Section------------- -->
+
+    <section class="contact">
+      <h2>Contact Us!</h2>
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field field">
+              <input type="text" placeholder="Full Name" id="name"
+                class="item" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field field">
+              <input type="text" placeholder="Email Address" id="email"
+                class="item" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field field">
+              <input type="text" placeholder="Subject" id="subject"
+                class="item" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="textarea-field field">
+          <textarea name="" id="message" cols="30" rows="10"  placeholder="Your Message" class="item" autocomplete="off"></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+    </section>
 
       <!-- -------------Footer------------- -->
 
@@ -139,9 +175,13 @@
 
       </section>
 
-      <!-- -------------Javascript for Toggle Menu------------- -->
+      <!-- -------------Javascript source------------- -->
 
-     <script>
+     <script src="script.js"></script>
+
+      <!-- -------------Javascript for toggle------------- -->
+
+      <script>
       var navLinks = document.getElementById("navLinks");
 
       function showMenu() {
@@ -150,6 +190,7 @@
       function hideMenu() {
         navLinks.style.right = "-150px";
       } 
-    </script>
+      
+      </script>
 </body>
 </html>
