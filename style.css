@@ -91,7 +91,7 @@ nav img {
   font-size: 20px;
   position: relative;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 5px;
   font-family: "Poppins";
 }
 .hero-btn:hover {
@@ -177,7 +177,7 @@ nav img {
   }
   .nav-links {
     position: absolute;
-    background: rgb(0, 0, 51);
+    background: rgb(0, 0, 21);
     height: 100vh;
     width: 150px;
     right: -150px;
@@ -259,11 +259,14 @@ nav img {
 
 @media(max-width:700px){
 
+  .hero-content{
+    margin-bottom: 20px;
+  }
   .problem-solution {
     width: 80%;
     margin: auto;
-    padding-top: 20px;
-    min-height: fit-content;
+    padding-top: 30px;
+    min-height: 70vh;
     color: #fff;
   }
   .prob-col h2 {
@@ -282,7 +285,10 @@ nav img {
     font-size: .9rem;
     font-family: "Poppins";
   }
+.sol-col{
+  padding-bottom: -30px;
 
+}
   .sol-col h2 {
     font-size: 1rem;
     padding-left: 40px;
@@ -291,10 +297,103 @@ nav img {
     font-size: .8rem;
     text-align: start;
     padding-left: 3.125rem;
+    margin-bottom: 1rem;
   }
 }
 
+/* <!-- -------------contactUs Section------------- --> */
 
+.contact-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  background: #0e0f12;
+  gap: 20px;
+}
+
+.contact .item{
+  font-family: "Outfit",sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-bottom: 20px;
+}
+
+.contact-title h2{
+  font-weight: 800;
+  color: white;
+  font-size: 40px;
+  margin: 40px 0 3px 0;
+  font-family: "Outfit",sans-serif;
+
+}
+.contact-title hr {
+  border: none;
+  width: 100px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 0 30px 10px;
+}
+
+.item{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 15px 0 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #787878;
+  font-size: 15px;
+  border: 2px solid white;
+}
+
+.contact textarea{
+  height: 140px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.item:focus{
+  border: 2px solid rgb(242, 144, 144);
+  background-color: rgb(255, 246, 233);
+}
+
+.contact button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  width: auto;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-family: "Outfit",sans-serif;
+  background: linear-gradient(to right, rgb(61, 80, 188), rgb(62, 36, 110));
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.contact button img{
+  height: 15px;
+}
+
+@media (max-width:800px) {
+  .contact .item{
+    width: 50vw;
+  }
+  .h-captcha{
+    width: 50vw;
+  }
+}
+
+.h-captcha{
+  margin: 10px;
+  border-radius: 9px;
+}
 /* <!-- -------------Footer Section------------- --> */
 
 .footer {
