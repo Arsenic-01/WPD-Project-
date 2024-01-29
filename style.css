@@ -5,6 +5,10 @@
   overflow-x: hidden;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* <!-- -------------Navbar------------- --> */
 
 .header {
@@ -16,7 +20,7 @@
     ),
     url(banner2.jpg);
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   position: relative;
 }
 
@@ -378,7 +382,7 @@ nav img {
 }
 
 .contact button img{
-  height: 15px;
+  height: 15px; 
 }
 
 @media (max-width:800px) {
@@ -388,11 +392,70 @@ nav img {
   .h-captcha{
     width: 50vw;
   }
+  .contact-title h2{
+    font-weight: 800;
+    color: white;
+    font-size: 30px;
+  }
+  
+.item{
+  width: 400px;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding: 0 15px 0 25px;
+  border-radius: 25px;
+  font-weight: 500;
+  color: #787878;
+  font-size: 15px;
+  border: 2px solid white;
+}
 }
 
 .h-captcha{
   margin: 10px;
   border-radius: 9px;
+}
+
+/* <!-- -------------backToTop-button------------- --> */
+
+#progress{
+  background-color: #3b49c7;
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor:pointer;
+}
+
+#progress-value{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+  color: #001a2e;
+}
+
+@media (max-width:700px) {
+  #progress{
+    height: 50px;
+    width: 50px;
+    right: 10px;
+  }
+  #progress-value{
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    font-size: 30px;
+  }
 }
 /* <!-- -------------Footer Section------------- --> */
 
@@ -407,3 +470,4 @@ nav img {
   text-align: center;
   color: #bebebe;
 }
+
