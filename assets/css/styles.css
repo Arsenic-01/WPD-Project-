@@ -1,0 +1,224 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background: linear-gradient(
+    90deg,
+    rgb(22, 22, 22) 40%,
+    rgb(0, 1, 44) 100%,
+    rgb(0, 0, 0) 100%
+  );
+  color: var(--white-color);
+  overflow: hidden;
+}
+/*=============== HEADING ===============*/
+
+.heading h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(80px);
+}
+
+@media (max-width: 700px) {
+  .heading h1 {
+    font-size: 2rem;
+  }
+}
+
+/*=============== ANCHOR TAGS ===============*/
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:visited {
+  color: #ffffff;
+}
+
+/*=============== CARD ===============*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card__container {
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: linear-gradient();
+}
+.card__content_wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.555);
+  border-radius: 0.75rem;
+}
+.card__article {
+  width: 500px; /* Remove after adding swiper js */
+  border-radius: 0.75rem;
+  overflow: hidden;
+  color: #0012428a;
+  padding: 1rem;
+  text-align: center;
+}
+.card__content_wrapper span {
+  font-size: 2rem;
+}
+.card__name {
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+}
+
+.card__button {
+  background-color: #68686879;
+  opacity: 63%;
+  width: 100%;
+  justify-content: center;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.3rem;
+  margin: 20px 0 20px 0;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card__button1:visited {
+  color: azure;
+}
+.button {
+  margin: 1rem;
+}
+.card__embed {
+  background-color: #68686879;
+  padding: 20px 30px;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+.card__button2 a {
+  font-size: 30px;
+  padding: 4px 20px;
+  background-color: rgba(10, 22, 34, 0.404);
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.card__embed h3 {
+  padding: 4px;
+  margin-top: 10px;
+}
+
+@media (max-width: 460px) {
+  .card__embed h2 {
+    font-size: 1.24rem;
+  }
+  .card__embed h3 {
+    font-size: 1rem;
+    padding: 4px;
+    margin-top: 10px;
+  }
+}
+
+/* Swiper class */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: var(--second-color);
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+  color: #ffffff;
+}
+
+.swiper-button-next {
+  right: 0;
+  color: #ffffff;
+}
+
+.swiper-pagination-bullet {
+  background-color: hsl(212, 37%, 40%);
+  opacity: 1;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 1120px;
+  }
+
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+    right: -1rem;
+  }
+}

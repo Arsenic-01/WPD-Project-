@@ -11,22 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <linkrel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
 </head>
 <body>
     <!-- -------------Navbar------------- -->
 
-    <section class="header">
+    <section class="header" id="home">
+      <div class="nav-bar">
         <nav>
-            <a href="index.html" class="logo"><img src="logo1.png"></a>
+            <a href="index.html" class="logo"><img src="/assets/img/logo1.png"></a>
             <div class="nav-links"  id="navLinks">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
-                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="#home">HOME</a></li>
+                  <li><a href="#blog">BLOG</a></li>
                   <li><a href="notes.html">NOTES</a></li>
-                  <li><a href="blog.html">BLOG</a></li>
-                  <li><a href="aboutus.html">ABOUT US</a></li>
+                  <li><a href="#contact-us">CONTACT US</a></li>
+                  <li><a href="about-us.html">ABOUT US</a></li>
                 </ul>
               </div>
               <i class="fa-solid fa-bars" onclick="showMenu()"></i>
@@ -40,13 +44,14 @@
           </p>
           <a href="notes.html" class="hero-btn">Go to Notes</a>
         </div>
+      </div>
     </section>
 
 
     <!-- -------------Problem and Solutions Section------------- -->
 
 
-    <section class="wrapper">
+    <section class="wrapper" id="blog">
     <section class="problem-solution">
       <div class="hero-content">
           <div class="prob-col">
@@ -120,14 +125,10 @@
     </section>
   </section>
   
-      <!-- -------------Embed Section------------- -->
-
-  <section class="embed">
-
-  </section>
+  
 
       <!-- -------------ContactUs & Uploads Section------------- -->
-    <section class="contact-wrapper">
+    <section class="contact-wrapper" id="contact-us">
     <section class="contact">
    
       <form action="https://api.web3forms.com/submit" method="POST" id="form-id">
@@ -174,8 +175,8 @@
 
       <!-- -------------Javascript source------------- -->
 
-     <script src="script.js"></script>
-     
+     <script src="js/script.js"></script>
+
      <script src="https://web3forms.com/client/script.js" async defer></script>
      <script>
       const form = document.getElementById('form-id');
@@ -190,7 +191,14 @@
               return
           }
       });
+      
       </script>
+      <!-- -------------Javascript for Swiper------------- -->
+
+      <script src="js/swiper-bundle.min.js"></script>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
       <!-- -------------Javascript for toggle------------- -->
 
       <script>
