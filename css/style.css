@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Outfit", sans-serif;
   overflow-x: hidden;
 }
 
@@ -74,8 +74,11 @@ nav img {
 .nav-links ul li a {
   text-decoration: none;
   color: #fff;
+  opacity: 0.8;
 }
-
+.nav-links ul li a:hover {
+  opacity: 1;
+}
 .nav-links ul li::after {
   content: "";
   width: 0%;
@@ -128,6 +131,13 @@ nav img {
   background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
   color: rgb(255, 255, 255);
   transition: 0.3s;
+}
+
+.hero-btn:active {
+  border: 1px solid rgb(40, 60, 177);
+  background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
+  color: rgb(255, 255, 255);
+  /* transition: 0.3s; */
 }
 
 /* <!-- -------------Navbar____MEDIA QUERIES------------- --> */
@@ -187,6 +197,12 @@ nav img {
     font-size: 20px;
     position: relative;
     cursor: pointer;
+  }
+  .hero-btn {
+    border: 1px solid rgb(40, 60, 177);
+    background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
   }
 
   .nav .logo img {
@@ -295,30 +311,30 @@ nav img {
     color: #fff;
   }
   .prob-col h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 2.5rem;
     padding-left: 2.5rem;
   }
 
   .prob-col p {
     margin-bottom: 0.625rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: start;
     padding-left: 3.125rem;
   }
   .prob-col .para-heading {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-family: "Poppins";
   }
   .sol-col {
     padding-bottom: -30px;
   }
   .sol-col h2 {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-left: 40px;
   }
   .sol-col p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: start;
     padding-left: 3.125rem;
     margin-bottom: 1rem;
@@ -432,8 +448,168 @@ nav img {
   background-color: rgb(0, 0, 0, 0);
 }
 
-/* <!-- -------------embeds-Reponsive Section------------- --> */
+/* <!-- -------------Go-to-Resources Section------------- --> */
 
+.notes {
+  height: 60vh;
+  background: linear-gradient(60deg, #161616, #170430fb);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 20px 5rem 20px;
+}
+
+.notes h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.notes .tips-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+}
+
+.tips-img img {
+  width: 300px;
+  height: 260px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.tips-list {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.tips ul li {
+  margin-top: 7px;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.tips-hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 12px 34px;
+  background: transparent;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins";
+  background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
+  transition: 0.3s;
+  margin-top: 40px;
+}
+
+@media (max-width: 940px) {
+  .notes h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .tips-img img {
+    width: 200px;
+    height: 175px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  .tips-list {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .tips ul li {
+    margin-top: 7px;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
+
+@media (max-width: 740px) {
+  .notes h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .tips-img img {
+    width: 150px;
+    height: 115px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  .tips-list {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .tips ul li {
+    margin-top: 7px;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .notes {
+    height: 67vh;
+    background: linear-gradient(60deg, #161616, #170430fb);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0 5rem 20px;
+  }
+  .notes .tips-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 10px;
+  }
+}
+@media (max-width: 500px) {
+  .notes h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-right: 20px;
+  }
+  .tips-img img {
+    display: none;
+  }
+  .tips-list {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .tips ul li {
+    margin-top: 7px;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .notes {
+    height: 67vh;
+    background: linear-gradient(60deg, #161616, #170430fb);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0 5rem 20px;
+  }
+
+  .tips-hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 28px;
+    background: transparent;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Poppins";
+    background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
+    transition: 0.3s;
+    margin-top: 40px;
+  }
+}
 /* <!-- -------------contactUs Section------------- --> */
 
 .contact-wrapper {
@@ -443,6 +619,10 @@ nav img {
   min-height: 60vh;
   background: #0e0f12;
   gap: 20px;
+}
+
+#contact-us {
+  padding-bottom: 3rem;
 }
 
 .contact .item {
@@ -587,14 +767,187 @@ nav img {
 }
 /* <!-- -------------Footer Section------------- --> */
 
+.footer-wrapper {
+  background-color: #000000;
+  font-family: "Outfit", sans-serif;
+}
 .footer {
   min-height: auto;
   width: 100vw;
-  background-color: rgb(51, 51, 51);
+  background: linear-gradient(to right, #000941de, #2d0b00be);
   color: #fff;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 125px;
+  font-size: 15px;
+  padding-bottom: 20px;
+  padding-top: 70px;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
-.made-by {
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 20%;
+}
+
+.col .logo {
+  width: 170px;
+  margin-bottom: 1.8rem;
   text-align: center;
-  color: #bebebe;
+}
+
+.col .logo-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.col-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.col h3 {
+  font-size: 1.7rem;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 20px;
+  height: 45px;
+}
+.col .count {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: 200;
+  font-family: "Outfit", sans-serif;
+}
+.col-links {
+  display: flex;
+  flex-direction: column;
+}
+.col .col-links a:hover {
+  text-decoration: underline;
+}
+.social-links .fa-brands {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000;
+  background: #ffffff;
+  margin-right: 15px;
+  cursor: pointer;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+.social-links .fa-brands:hover {
+  opacity: 1;
+}
+
+.email-id {
+  font-size: 1.1rem;
+}
+
+.fa-solid {
+  width: 30px;
+  text-align: center;
+  opacity: 0.8;
+}
+.email:hover .fa-solid {
+  opacity: 1;
+}
+
+.count {
+  margin-top: 20px;
+}
+
+#visits {
+  margin-top: 20px;
+}
+
+.hr-bottom {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #cccccc8c;
+  margin: 20px auto;
+}
+
+.made-with {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #eeeeeed3;
+}
+
+.underline1 {
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.underline1 span {
+  width: 15px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer {
+    bottom: unset;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+  .col h3 {
+    font-size: 1.4rem;
+    margin-top: 30px;
+  }
+  .social-links .fa-brands {
+    margin-top: 0;
+  }
+  .col-links a {
+    font-size: 1rem;
+  }
+
+  .footer {
+    border-top-left-radius: 70px;
+    border-top-right-radius: 0px;
+  }
 }

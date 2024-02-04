@@ -178,7 +178,7 @@ nav img {
   }
   .nav-links {
     position: absolute;
-    background: rgb(0, 0, 21);
+    background: rgba(0, 0, 21, 0.568);
     height: 100vh;
     width: 150px;
     right: -150px;
@@ -455,7 +455,8 @@ nav img {
 .footer {
   min-height: auto;
   width: 100vw;
-  background-color: rgb(51, 51, 51);
+  /* background: linear-gradient(to right, #00093c, #2d0b00); */
+  background-color: #001a2e;
   color: #fff;
 }
 
