@@ -114,3 +114,18 @@ body {
     font-size: 1.9rem;
   }
 }
+
+.goto-home {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 28px;
+  background: transparent;
+  font-size: 30px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
+  transition: 0.3s;
+  margin-top: 40px;
+}
