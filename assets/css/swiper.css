@@ -1,16 +1,16 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
 
+/*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Font and typography ==========*/
-
+  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Bai Jamjuree", sans-serif;
   --h2-font-size: 1.25rem;
   --normal-font-size: 1rem;
 }
 
 /*=============== BASE ===============*/
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -60,7 +60,6 @@ a:visited {
 }
 
 /*=============== CARD ===============*/
-
 .container {
   display: flex;
   justify-content: center;
@@ -166,7 +165,6 @@ a:visited {
 }
 
 /* Swiper class */
-
 .swiper-button-prev:after,
 .swiper-button-next:after {
   content: "";
@@ -197,9 +195,7 @@ a:visited {
 }
 
 /*=============== BREAKPOINTS ===============*/
-
 /* For small devices */
-
 @media screen and (max-width: 320px) {
   .card__data {
     padding: 1rem;
@@ -207,7 +203,6 @@ a:visited {
 }
 
 /* For medium devices */
-
 @media screen and (min-width: 768px) {
   .card__content {
     margin-inline: 3rem;
@@ -220,7 +215,6 @@ a:visited {
 }
 
 /* For large devices */
-
 @media screen and (min-width: 1120px) {
   .card__container {
     max-width: 1120px;
