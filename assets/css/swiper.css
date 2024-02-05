@@ -1,4 +1,16 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+:root {
+  /*========== Font and typography ==========*/
+
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
 /*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -48,6 +60,7 @@ a:visited {
 }
 
 /*=============== CARD ===============*/
+
 .container {
   display: flex;
   justify-content: center;
