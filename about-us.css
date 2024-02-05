@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(120deg, #111727, #272c47);
+  color: white;
+  font-family: "Jockey One", sans-serif;
+  min-height: 100vh;
+  opacity: 0.7;
+}
+.wrapper {
+  margin-top: 4%;
+  text-align: center;
+}
+.wrapper h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 130px;
+  position: relative;
+}
+
+.wrapper h1 hr {
+  width: 10%;
+  position: absolute;
+  left: 45.2%;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 100px;
+  border: 0.2px solid #fff;
+}
+
+.wrapper .team-wrapper {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.team {
+  margin: 30px;
+  border-radius: 20px;
+  background-color: #3b3b3f71;
+  padding: 60px 30px 60px 30px;
+  position: relative;
+  opacity: 1;
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+}
+.team-img {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-53%);
+}
+.team-img img {
+  border-radius: 50%;
+}
+.team h3 {
+  font-size: 2.1rem;
+  margin: 40px;
+}
+
+#contribution {
+  font-size: 1.9rem;
+  margin: 20px 0 20px 0;
+}
+
+.common {
+  font-size: 1.7rem;
+  color: rgb(184, 184, 184);
+}
+
+.role {
+  font-size: 2.1rem;
+  color: rgb(209, 231, 250);
+}
+
+#img2 {
+  background: #fff;
+}
+
+@media (max-width: 853px) {
+  .team {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .team h3 {
+    font-size: 2rem;
+    margin: 40px;
+  }
+
+  #contribution {
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+  }
+
+  .common {
+    font-size: 1.5rem;
+  }
+
+  .role {
+    font-size: 1.9rem;
+  }
+}
