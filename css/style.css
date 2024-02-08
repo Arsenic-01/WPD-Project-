@@ -753,7 +753,7 @@ nav img {
   color: #001a2e;
 }
 
-/* @media (max-width: 700px) {
+@media (max-width: 700px) {
   #progress {
     height: 50px;
     width: 50px;
@@ -764,7 +764,7 @@ nav img {
     width: calc(100% - 10px);
     font-size: 30px;
   }
-} */
+}
 /* <!-- -------------Footer Section------------- --> */
 
 .footer-wrapper {
