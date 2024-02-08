@@ -745,7 +745,14 @@ nav img {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
-
+.fa-arrow-up {
+  font-size: 27px;
+}
+@media (max-width: 700px) {
+  .fa-arrow-up {
+    font-size: 23px;
+  }
+}
 #progress-value {
   display: block;
   height: calc(100% - 15px);
