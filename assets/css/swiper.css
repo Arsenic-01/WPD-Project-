@@ -81,7 +81,7 @@ a:visited {
   overflow: hidden;
 }
 .card__content_wrapper {
-  border: 1px solid rgba(255, 255, 255, 0.555);
+  border: 1px solid rgba(255, 255, 255, 0.753);
   border-radius: 0.75rem;
 }
 .card__article {
@@ -102,7 +102,7 @@ a:visited {
 }
 
 .card__button {
-  background-color: #68686879;
+  background-color: rgba(93, 103, 114, 0.753);
   opacity: 63%;
   width: 100%;
   justify-content: center;
@@ -121,7 +121,7 @@ a:visited {
   margin: 1rem;
 }
 .card__embed {
-  background-color: #68686879;
+  background-color: #6868686e;
   padding: 20px 30px;
   border-radius: 0.25rem;
   color: #ffffff;
@@ -130,7 +130,7 @@ a:visited {
 .card__button2 a {
   font-size: 30px;
   padding: 4px 20px;
-  background-color: rgba(10, 22, 34, 0.404);
+  background-color: rgba(10, 22, 34, 0.432);
   border-radius: 20px;
   margin: 20px;
 }
