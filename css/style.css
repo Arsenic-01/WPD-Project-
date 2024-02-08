@@ -784,7 +784,7 @@ nav img {
   #progress-value {
     height: calc(100% - 10px);
     width: calc(100% - 10px);
-    /* font-size: 30px; */
+    font-size: 30px;
   }
 }
 /* <!-- -------------Footer Section------------- --> */
