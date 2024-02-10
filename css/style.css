@@ -45,8 +45,9 @@ html {
 @media (max-width: 700px) {
   .nav-bar {
     position: initial;
-    background-color: #000000ad;
+    background-color: #0000008c;
     width: 100%;
+    backdrop-filter: none;
   }
 }
 nav {
