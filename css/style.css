@@ -617,6 +617,10 @@ nav img {
     margin-top: 40px;
   }
 }
+.tips-hero-btn:hover {
+  transform: translateY(-4px);
+  transition: all 0.4s ease;
+}
 /* <!-- -------------contactUs Section------------- --> */
 
 .contact-wrapper {
@@ -694,8 +698,12 @@ nav img {
   background: linear-gradient(to right, rgb(61, 80, 188), rgb(62, 36, 110));
   cursor: pointer;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
-
+.contact button:hover {
+  transform: translateY(-4px);
+  transition: all 0.4s ease;
+}
 .contact button img {
   height: 15px;
 }
@@ -893,6 +901,8 @@ nav img {
 }
 .social-links .fa-brands:hover {
   opacity: 1;
+  transform: translateY(-2px);
+  transition: all 0.4s ease;
 }
 
 .email-id {

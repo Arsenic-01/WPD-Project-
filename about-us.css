@@ -130,3 +130,25 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+.team:hover {
+  transform: translateY(-10px);
+  background-color: #111727;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 1px #000000;
+}
+.team:active {
+  transform: translateY(-10px);
+  background-color: #111727;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 1px #000000;
+}
+.goto-home:hover {
+  transform: translateY(-4px);
+  transition: all 0.4s ease;
+}
+.team:focus {
+  transform: translateY(-10px);
+  background-color: #111727;
+  transition: all 0.4s ease;
+  box-shadow: 0 2px 1px #000000;
+}
