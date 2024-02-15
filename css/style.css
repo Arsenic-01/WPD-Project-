@@ -677,6 +677,7 @@ nav img {
   height: 140px;
   border-radius: 20px;
   padding: 15px;
+  resize: vertical;
 }
 
 .item:focus {
