@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   overflow-x: hidden;
 }
 
@@ -82,7 +82,7 @@ nav img {
   opacity: 1;
 }
 .nav-links ul li::after {
-  content: "";
+  content: '';
   width: 0%;
   height: 2px;
   display: block;
@@ -109,7 +109,7 @@ nav img {
   font-size: 130px;
   font-weight: 900;
   color: #c5c5c5;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .text-box p {
   padding-bottom: 35px;
@@ -126,7 +126,7 @@ nav img {
   position: relative;
   cursor: pointer;
   border-radius: 5px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 .hero-btn:hover {
   border: 1px solid rgb(40, 60, 177);
@@ -167,7 +167,7 @@ nav img {
     cursor: pointer;
   }
   .nav-links ul li::after {
-    content: "";
+    content: '';
     width: 0%;
     height: 2px;
     display: block;
@@ -278,7 +278,7 @@ nav img {
 
 .prob-col .para-heading {
   font-size: 1.7rem;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 .prob-col .para-content {
   margin: 1rem;
@@ -326,7 +326,7 @@ nav img {
   }
   .prob-col .para-heading {
     font-size: 1.1rem;
-    font-family: "Poppins";
+    font-family: 'Poppins';
   }
   .sol-col {
     padding-bottom: -30px;
@@ -347,7 +347,7 @@ nav img {
 
 .embed h1 {
   text-align: center;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 40px;
   color: white;
   background: linear-gradient(
@@ -430,7 +430,7 @@ nav img {
 .embed-links a {
   text-decoration: none;
   color: #001a2e;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 1.2rem;
 }
 
@@ -507,7 +507,7 @@ nav img {
   position: relative;
   cursor: pointer;
   border-radius: 5px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
   transition: 0.3s;
   margin-top: 30px;
@@ -615,7 +615,7 @@ nav img {
     position: relative;
     cursor: pointer;
     border-radius: 5px;
-    font-family: "Poppins";
+    font-family: 'Poppins';
     background: linear-gradient(to right, rgb(40, 60, 177), rgb(99, 71, 150));
     transition: 0.3s;
     margin-top: 40px;
@@ -641,7 +641,7 @@ nav img {
 }
 
 .contact .item {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -653,7 +653,7 @@ nav img {
   color: white;
   font-size: 40px;
   margin: 40px 0 3px 0;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .contact-title hr {
   border: none;
@@ -699,7 +699,7 @@ nav img {
   border: none;
   border-radius: 50px;
   color: white;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
   background: linear-gradient(to right, rgb(61, 80, 188), rgb(62, 36, 110));
   cursor: pointer;
   margin-bottom: 30px;
@@ -752,8 +752,8 @@ nav img {
   position: fixed;
   bottom: 20px;
   right: 15px;
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   display: none;
   place-items: center;
   border-radius: 50%;
@@ -761,11 +761,11 @@ nav img {
   cursor: pointer;
 }
 .fa-arrow-up {
-  font-size: 27px;
+  font-size: 23px;
 }
 @media (max-width: 700px) {
   .fa-arrow-up {
-    font-size: 23px;
+    font-size: 20px;
   }
 }
 #progress-value {
@@ -779,29 +779,7 @@ nav img {
   font-size: 40px;
   color: #001a2e;
 }
-#progress {
-  position: fixed;
-  bottom: 20px;
-  right: 10px;
-  height: 70px;
-  width: 70px;
-  display: none;
-  place-items: center;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-#progress-value {
-  display: block;
-  height: calc(100% - 15px);
-  width: calc(100% - 15px);
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 35px;
-  color: #001a2e;
-}
+
 @media (max-width: 700px) {
   #progress {
     height: 50px;
@@ -818,7 +796,7 @@ nav img {
 
 .footer-wrapper {
   background: #0e0f12;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .footer {
   min-height: auto;
@@ -881,7 +859,7 @@ nav img {
   font-size: 1.1rem;
   margin-top: 1rem;
   font-weight: 200;
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 .col-links {
   display: flex;
