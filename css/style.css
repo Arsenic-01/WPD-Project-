@@ -500,6 +500,7 @@ nav img {
 .notes {
   max-height: 63vh;
   min-height: 50vh;
+
   background: linear-gradient(60deg, #161616, #170430fb);
   color: #fff;
   text-align: center;
