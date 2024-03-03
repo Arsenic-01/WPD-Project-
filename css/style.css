@@ -750,8 +750,8 @@ nav img {
 #progress {
   background-color: #3b49c7;
   position: fixed;
-  bottom: 20px;
-  right: 15px;
+  bottom: 30px;
+  right: 20px;
   height: 60px;
   width: 60px;
   display: none;
