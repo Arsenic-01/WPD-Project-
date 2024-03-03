@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="leaves.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
@@ -39,9 +44,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
+      gtag('js', new Date());
 
-      gtag("config", "G-VXXR3455NP");
+      gtag('config', 'G-VXXR3455NP');
     </script>
     <!-- -------------Navbar------------- -->
 
@@ -55,7 +60,7 @@
             <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
               <li><a href="#home">HOME</a></li>
-              <li><a href="#blog">BLOG</a></li>
+              <li><a href="#auth">LEAVE-AUTH</a></li>
               <li><a href="notes.html">NOTES</a></li>
               <li><a href="#contact-us">CONTACT US</a></li>
               <li><a href="about-us.html">ABOUT US</a></li>
@@ -67,7 +72,10 @@
       <div class="text-box">
         <h1>Project Moto</h1>
         <p>Provide Quality Notes & Resources in One Place.</p>
-        <a href="notes.html" class="hero-btn">Go to Notes</a>
+        <div class="heroBtn">
+          <a href="notes.html" class="hero-btn">Go to Notes</a>
+          <a href="notes.html" class="hero-btn-auth">Go to Leave Auth</a>
+        </div>
       </div>
     </section>
 
@@ -169,6 +177,30 @@
       </div>
       <a href="notes.html" class="tips-hero-btn">Go to Notes</a>
     </section>
+    <!-- -------------Auth Section------------- -->
+    <div class="leave-wrapper" id="auth">
+      <div class="screen">
+        <div class="content">
+          <div class="leave-title-wrapper">
+            <h1 class="leave-title">
+              <div id="darkMode-wrap-red-dot"></div>
+              <span></span>New Feature :
+              <span class="leave-span">Online Leave Authorizer</span>
+            </h1>
+          </div>
+          <p class="leave-content">
+            Wanted a <b>leave application</b> ?<br />
+            Enter details and get a completely filled leave application pdf
+            here<br />
+            Just enter your details with the reason.
+          </p>
+          <a href="https://forms.gle/rJWW5qN11kjDdnhc8" class="hero-btn-leave"
+            >Go to Leave-Auth</a
+          >
+        </div>
+      </div>
+    </div>
+
     <!-- -------------ContactUs & Uploads Section------------- -->
     <section class="contact-wrapper" id="contact-us">
       <div class="contact">
@@ -283,15 +315,14 @@
                 <div class="underline1"><span></span></div>
               </h3>
               <div class="social-links">
-                <a href="https://www.instagram.com/kkwpoly/"
+                <a href="https://www.instagram.com/study_stack02/"
                   ><i class="fa-brands fa-instagram"></i
                 ></a>
-                <a
-                  href="https://www.youtube.com/channel/UC9m-8o7d34-tmIg_a2vuuDQ"
+                <a href="https://www.youtube.com/@StudyStack01"
                   ><i class="fa-brands fa-youtube"></i
                 ></a>
-                <a href="https://www.facebook.com/KKWaghPolytechincNashik/"
-                  ><i class="fa-brands fa-facebook"></i
+                <a href="https://discord.gg/qDcN9GEf"
+                  ><i class="fa-brands fa-discord"></i
                 ></a>
               </div>
             </div>
@@ -309,16 +340,16 @@
 
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script>
-      const form = document.getElementById("form-id");
+      const form = document.getElementById('form-id');
 
-      form.addEventListener("submit", function (e) {
+      form.addEventListener('submit', function (e) {
         const hCaptcha = form.querySelector(
-          "textarea[name=h-captcha-response]"
+          'textarea[name=h-captcha-response]'
         ).value;
 
         if (!hCaptcha) {
           e.preventDefault();
-          alert("Please fill out captcha field");
+          alert('Please fill out captcha field');
           return;
         }
       });
@@ -331,13 +362,13 @@
     <!-- -------------Javascript for toggle------------- -->
 
     <script>
-      var navLinks = document.getElementById("navLinks");
+      var navLinks = document.getElementById('navLinks');
 
       function showMenu() {
-        navLinks.style.right = "0";
+        navLinks.style.right = '0';
       }
       function hideMenu() {
-        navLinks.style.right = "-150px";
+        navLinks.style.right = '-150px';
       }
     </script>
   </body>
